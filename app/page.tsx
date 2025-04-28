@@ -95,9 +95,9 @@ export default function Home() {
 
       setCurrentImage(newImage)
 
-      // Add to history and keep only the last 5 images
+      // Add to history and keep only the last 50 images
       setImageHistory((prev) => {
-        const updatedHistory = [newImage, ...prev].slice(0, 5)
+        const updatedHistory = [newImage, ...prev].slice(0, 50)
         return updatedHistory
       })
 
